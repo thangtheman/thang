@@ -113,3 +113,8 @@ ul .top-news-dot {
 .grid-space {
     padding: 0 5px 0 5px;
 }
+@media only screen and (max-width: 690px) {
+    .main-image span h3{
+        font-size: 22px;
+    }
+}
