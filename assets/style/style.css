@@ -2,7 +2,10 @@ body{
     padding-top: 50px;
 }
 .container{
-    max-width: 1170px;
+    max-width: 1210px;
+    padding: 20px 20px 0 20px;
+    width: 100%;
+    height: 100%;
 }
 h1 {
     font: bold 48px Libre Baskerville;
@@ -22,13 +25,13 @@ h5 {
 h6 {
     font: bold 18px Libre Baskerville;
 }
-p .big {
+.big {
     font: 18px Helvetica Neue;
 }
-p .medium {
+.medium {
     font: 16px Helvetica Neue;
 }
-p .small {
+.small {
     font: 14px Helvetica Neue;
 }
 .nav-title{
@@ -103,18 +106,103 @@ span {
 ul .top-news-dot {
     list-style-type: circle;
     list-style-image: url('../icons/red-dots.png');
-    list-style-position: inherit;
-    font-family: Helvetica Neue;
-    font-size: 16px;
+    list-style-position: inside;
     font-weight: bold;
     text-align: left;
     padding-top: 9px;
 }
 .grid-space {
-    padding: 0 5px 0 5px;
+    padding: 15px 15px 0 0;
 }
 @media only screen and (max-width: 690px) {
     .main-image span h3{
         font-size: 22px;
     }
+}
+.trending {
+    text-align: left;
+    padding-bottom: 30px;
+}
+.news-side h1{
+    margin-top: -5px;
+}
+##align1{
+    margin-top: -15px;
+}
+.region {
+    border-left-color: #FFA800;
+    border-left-style: solid;
+    border-left-width: 3px;
+    padding-left: 5px;
+}
+.small-news {
+    padding-top: 8px;
+    margin-left: -15px;
+    list-style-position: inherit;
+    list-style-image: url('../icons/orange-dots.png');
+}
+.border-top-small-news{
+    border-top: #FFA800 solid 2px;
+    position: absolute;
+    left: 0;
+    right: 10px;
+
+}
+ul .video-news {
+    list-style-image: url('../icons/video-dots.png');
+}
+.top-news-vid .video-icon {
+    position: relative;
+}
+.video-icon-on{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-news-vid div{
+    background-color: #2e2c27;
+}
+.top-news-vid div h4{
+    color: white;
+    padding: 10px 20px 0 20px;
+}
+.top-news-vid div p{
+    color: #FFDA29;
+    padding: 0 20px 20px 20px;
+}
+.world-news {
+    text-align: left;
+    border-top: 1px solid #84827B;
+}
+.category {
+    color: #FF6125;
+    text-transform: capitalize;
+    margin-top: 0px;
+}
+.world-news-tab {
+    background-color: #eaeaea;
+    border-bottom: solid 2px #FFA800;
+    color: #2e2c27;
+    padding:10px 15px;
+}
+.world-news-content {
+    margin-top: -20px;
+}
+.world-box{
+    margin-bottom: 5px;
+}
+.influencers{
+    padding-top: 10px;
+}
+table, tr {
+    border: 1px solid black;
+    width: 100%;
+}
+td {
+    padding: 15px 10px;
+}
+.red {
+    color: red;
 }
