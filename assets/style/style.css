@@ -112,13 +112,19 @@ ul .top-news-dot {
     padding-top: 9px;
 }
 .grid-space {
-    padding: 15px 15px 0 15px;
+    padding: 0px 0px 0px 30px;
 }
 @media only screen and (max-width: 690px) {
     .main-image span h3{
         font-size: 22px;
     }
 }
+@media only screen and (min-width: 1170px) {
+    #movies-life{
+        border-left: solid 1px #FFDA29 ;
+    }
+}
+
 .trending {
     text-align: left;
     padding-bottom: 30px;
@@ -267,3 +273,14 @@ td {
     margin-top: 5px;
 }
 .author-space {padding: 15px 0}
+/*.row.no-gutter [class*='col-']:not(:first-child),.row.no-gutter [class*='col-']:not(:last-child) {*/
+    /*padding-right:15px;*/
+    /*padding-left:15px;*/
+/*}*/
+hr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
