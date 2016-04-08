@@ -47,8 +47,8 @@
       <file leaf-file-name="thang.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/thang.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
+            <state relative-caret-position="255">
+              <caret line="15" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,10 +99,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1360" />
-    <option name="y" value="58" />
+    <option name="x" value="-46" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="977" />
+    <option name="height" value="812" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -605,15 +605,15 @@
       <workItem from="1459360888057" duration="41649000" />
       <workItem from="1459786775331" duration="8850000" />
       <workItem from="1459973226464" duration="1385000" />
-      <workItem from="1460137111541" duration="516000" />
+      <workItem from="1460137111541" duration="1820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52400000" />
+    <option name="totallyTimeSpent" value="53704000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1360" y="58" width="1920" height="977" extended-state="0" />
+    <frame x="-46" y="23" width="1920" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -970,8 +970,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thang.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
+        <state relative-caret-position="255">
+          <caret line="15" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>

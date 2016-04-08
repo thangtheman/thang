@@ -1,109 +1,29 @@
-<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:noNamespaceSchemaLocation="vast3_draft.xsd">
-    <Ad id="midroll-1" sequence="1">
-        <InLine>
-            <AdSystem version="2.0">JW Player</AdSystem>
-            <AdTitle>Static Tag</AdTitle>
-            <Error>
-                https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif?err=[ERRORCODE]
-            </Error>
-            <Impression>
-                https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif
-            </Impression>
-            <Creatives>
-                <Creative sequence="1">
-                    <Linear skipoffset="00:00:03">
-                        <Duration>00:00:10</Duration>
-
-                        <VideoClicks>
-                            <ClickThrough>
-                                <![CDATA[ http://www.adotube.com/ ]]>
-                            </ClickThrough>
-                            <ClickTracking>
-                                https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif
-                            </ClickTracking>
-                        </VideoClicks>
-                        <MediaFiles>
-                            <MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="400" width="640" height="360">
-                                https://s3.amazonaws.com/demo.jwplayer.com/static-tag/adotube.mp4
-                            </MediaFile>
-                        </MediaFiles>
-                    </Linear>
-                </Creative>
-                <Creative>
-                    <CompanionAds>
-                        <Companion id="1" width="300" height="250">
-                            <StaticResource creativeType="image/jpg">
-                                https://s3.amazonaws.com/demo.jwplayer.com/static-tag/adotube-rectangle.jpg
-                            </StaticResource>
-                            <CompanionClickThrough>http://www.adotube.com</CompanionClickThrough>
-                        </Companion>
-                    </CompanionAds>
-                </Creative>
-            </Creatives>
-        </InLine>
-    </Ad>
-    <Ad id="midroll-2" sequence="2">
-        <InLine>
-            <AdSystem version="2.0">JW Player</AdSystem>
-            <AdTitle>Static Tag</AdTitle>
-            <Error>
-                https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif?err=[ERRORCODE]
-            </Error>
-            <Impression>
-                https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif
-            </Impression>
-            <Creatives>
-                <Creative sequence="1">
-                    <Linear skipoffset="00:00:03">
-                        <Duration>00:00:15</Duration>
-
-                        <AdParameters/>
-                        <VideoClicks>
-                            <ClickThrough>https://www.jwplayer.com/video-ads/</ClickThrough>
-                            <ClickTracking>
-                                https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif
-                            </ClickTracking>
-                        </VideoClicks>
-                        <MediaFiles>
-                            <MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="400" width="640" height="360">
-                                https://s3.amazonaws.com/demo.jwplayer.com/static-tag/ova.mp4
-                            </MediaFile>
-                        </MediaFiles>
-                    </Linear>
-                </Creative>
-
-            </Creatives>
-        </InLine>
-    </Ad>
-    <Ad id="midroll-3" sequence="3">
-        <InLine>
-            <AdSystem version="2.0">JW Player</AdSystem>
-            <AdTitle>Static Tag</AdTitle>
-            <Error>
-                https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif?err=[ERRORCODE]
-            </Error>
-            <Impression>
-                https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif
-            </Impression>
-            <Creatives>
-                <Creative sequence="1">
-                    <Linear skipoffset="00:00:03">
-                        <Duration>00:00:10</Duration>
-                        <VideoClicks>
-                            <ClickThrough>https://www.jwplayer.com</ClickThrough>
-                            <ClickTracking>
-                                https://s3.amazonaws.com/demo.jwplayer.com/static-tag/pixel.gif
-                            </ClickTracking>
-                        </VideoClicks>
-                        <MediaFiles>
-                            <MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="400" width="640" height="360">
-                                https://s3.amazonaws.com/demo.jwplayer.com/static-tag/jwplayer-10s.mp4
-                            </MediaFile>
-                        </MediaFiles>
-                    </Linear>
-                </Creative>
-
-            </Creatives>
-        </InLine>
-    </Ad>
-</VAST>
+<vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0">
+    <vmap:AdBreak timeOffset="start" breakType="linear" breakId="preroll">
+        <vmap:AdSource id="preroll-ad" allowMultipleAds="false" followRedirects="true">
+            <AdTagURI templateType="vast3">
+                <![CDATA[
+                https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/116684442/CatchUp_All_Pre_Roll_1st&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]
+]]>
+            </AdTagURI>
+        </vmap:AdSource>
+    </vmap:AdBreak>
+    <vmap:AdBreak timeOffset="50%" breakType="linear" breakId="midroll">
+        <vmap:AdSource id="midroll-ad" allowMultipleAds="false" followRedirects="true">
+            <AdTagURI templateType="vast3">
+                <![CDATA[
+https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/116684442/CatchUp_All_Pre_Roll_2nd&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]
+]]>
+            </AdTagURI>
+        </vmap:AdSource>
+    </vmap:AdBreak>
+    <vmap:AdBreak timeOffset="end" breakType="linear" breakId="postroll">
+        <vmap:AdSource id="postroll-ad" allowMultipleAds="false" followRedirects="true">
+            <AdTagURI templateType="vast3">
+                <![CDATA[
+https://support-static.jwplayer.com/content/advertising/ad_tags/postroll.xml
+]]>
+            </AdTagURI>
+        </vmap:AdSource>
+    </vmap:AdBreak>
+</vmap:VMAP>
