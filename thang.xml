@@ -3,7 +3,7 @@
         <vmap:AdSource id="preroll-ad" allowMultipleAds="false" followRedirects="true">
             <AdTagURI templateType="vast3">
                 <![CDATA[
-                https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/116684442/CatchUp_All_Pre_Roll_1st&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]
+                https://support-static.jwplayer.com/content/advertising/ad_tags/preroll.xml
 ]]>
             </AdTagURI>
         </vmap:AdSource>
@@ -12,7 +12,7 @@
         <vmap:AdSource id="midroll-ad" allowMultipleAds="false" followRedirects="true">
             <AdTagURI templateType="vast3">
                 <![CDATA[
-https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/116684442/CatchUp_All_Pre_Roll_2nd&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]
+https://support-static.jwplayer.com/content/advertising/ad_tags/midroll.xml
 ]]>
             </AdTagURI>
         </vmap:AdSource>
